@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html lang="{{ site.locale }}">
-  
+<html>
+
   {% include head.html %}
 
-  <body id="page-top">
-    {% include page-header.html %}
-	{% include about.md %}
-	{% include research.md %}
-    <section class="main-content">
-      
-      {{ content }}
 
-      {% include page-footer.html %}
+    <body id="page-top" class="index">
 
-    </section>
+    {% include header.html %}
+    {% include services.html %}
+    {% include portfolio_grid.html %}
+    {% include about.html %}
+    {% include team.html %}
+    {% include clients.html %}
+    {% include contact.html %}
+    {% include footer.html %}
+    {% include modals.html %}
+    {% include js.html %}
 
-  </body>
+    </body>
 </html>
