@@ -4,7 +4,7 @@
    permalink: /about/
 ---
 
-![lasers](/images/laser2.jpg)
+![lasers](/assets/laser2.jpg)
 
 ## Our Interests
 We seek to understand the control of gene expression. Differences in gene expression underlie the tremendous variety of cell types in our bodies and account for most of the innate differences between you and me or between me and chimpanzee. These differences are encoded in the non-transcribed parts of our genome called cis regulatory elements, regions that bind proteins (in a sequence dependent manner), which regulate transcription of surrounding genes. Surprisingly, these regulatory elements can be very far away (in linear sequence) from the transcribed elements they control, frequently tens to hundreds of thousands of basepairs apart.  A major direction in the lab is to understand how such long-range interactions occur, how they achieve target specificity, and how they may be reprogrammed by alterations to the genome sequence.
