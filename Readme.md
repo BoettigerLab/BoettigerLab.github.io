@@ -1,1 +1,1 @@
-This site is still in development, please check back!
+Investigating the 3D organization of the genome and its role in shaping gene expression.
