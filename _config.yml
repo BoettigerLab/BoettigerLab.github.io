@@ -24,7 +24,7 @@ github_username:  BoettigerLab
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-cayman
+theme: minima # jekyll-theme-cayman
 plugins:
   - jekyll-feed
 
