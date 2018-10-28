@@ -8,3 +8,5 @@ cover_image: https://boettigerlab.github.io/images/lasers2.jpg
 # Author
 author: Alistair Boettiger
 name: Alistair Boettiger
+
+theme: minimal-mistakes-jekyll
