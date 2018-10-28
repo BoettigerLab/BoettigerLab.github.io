@@ -1,7 +1,15 @@
 PATH
-  remote: .
+  remote: ..
   specs:
-    jekyll-cayman-theme (0.1.0)
+    minimal-mistakes-jekyll (4.13.0)
+      jekyll (~> 3.7)
+      jekyll-data (~> 1.0)
+      jekyll-feed (~> 0.10)
+      jekyll-gist (~> 1.5)
+      jekyll-include-cache (~> 0.1)
+      jekyll-paginate (~> 1.1)
+      jekyll-sitemap (~> 1.2)
+      jemoji (~> 0.10)
 
 GEM
   remote: https://rubygems.org/
@@ -13,6 +21,12 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
+    algolia_html_extractor (2.6.1)
+      json (~> 2.0)
+      nokogiri (~> 1.8.2)
+    algoliasearch (1.23.2)
+      httpclient (~> 2.8, >= 2.8.3)
+      json (>= 1.5.1)
     colorator (1.1.0)
     concurrent-ruby (1.0.5)
     em-websocket (0.5.1)
@@ -22,12 +36,14 @@ GEM
     faraday (0.15.3)
       multipart-post (>= 1.2, < 3)
     ffi (1.9.25)
+    filesize (0.2.0)
     forwardable-extended (2.6.0)
     gemoji (3.0.0)
     html-pipeline (2.8.4)
       activesupport (>= 2)
       nokogiri (>= 1.4)
     http_parser.rb (0.6.0)
+    httpclient (2.8.3)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
     jekyll (3.8.4)
@@ -43,12 +59,23 @@ GEM
       pathutil (~> 0.9)
       rouge (>= 1.7, < 4)
       safe_yaml (~> 1.0)
+    jekyll-algolia (1.4.7)
+      algolia_html_extractor (~> 2.6)
+      algoliasearch (~> 1.18)
+      filesize (~> 0.1)
+      jekyll (~> 3.0)
+      json (~> 2.0)
+      nokogiri (~> 1.6)
+      progressbar (~> 1.9)
+      verbal_expressions (~> 0.1.5)
     jekyll-data (1.0.0)
       jekyll (~> 3.3)
     jekyll-feed (0.11.0)
       jekyll (~> 3.3)
     jekyll-gist (1.5.0)
       octokit (~> 4.2)
+    jekyll-include-cache (0.1.0)
+      jekyll (~> 3.3)
     jekyll-paginate (1.1.0)
     jekyll-sass-converter (1.5.2)
       sass (~> 3.4)
@@ -60,6 +87,7 @@ GEM
       gemoji (~> 3.0)
       html-pipeline (~> 2.2)
       jekyll (~> 3.0)
+    json (2.1.0)
     kramdown (1.17.0)
     liquid (4.0.1)
     listen (3.1.5)
@@ -68,16 +96,7 @@ GEM
       ruby_dep (~> 1.2)
     mercenary (0.3.6)
     mini_portile2 (2.3.0)
-    minimal-mistakes-jekyll (4.13.0)
-      jekyll (~> 3.7)
-      jekyll-data (~> 1.0)
-      jekyll-feed (~> 0.10)
-      jekyll-gist (~> 1.5)
-      jekyll-paginate (~> 1.1)
-      jekyll-sitemap (~> 1.2)
-      jemoji (~> 0.10)
     minitest (5.11.3)
-    multi_json (1.13.1)
     multipart-post (2.0.0)
     nokogiri (1.8.5)
       mini_portile2 (~> 2.3.0)
@@ -85,10 +104,8 @@ GEM
       sawyer (~> 0.8.0, >= 0.5.3)
     pathutil (0.16.1)
       forwardable-extended (~> 2.6)
+    progressbar (1.10.0)
     public_suffix (3.0.3)
-    pygments.rb (1.2.1)
-      multi_json (>= 1.0.0)
-    rake (10.5.0)
     rb-fsevent (0.10.3)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
@@ -106,19 +123,14 @@ GEM
     thread_safe (0.3.6)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
+    verbal_expressions (0.1.5)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler (~> 1.12)
-  jekyll
-  jekyll-cayman-theme!
-  jekyll-paginate
-  kramdown
-  minimal-mistakes-jekyll
-  pygments.rb
-  rake (~> 10.0)
+  jekyll-algolia (~> 1.0)
+  minimal-mistakes-jekyll!
 
 BUNDLED WITH
    1.17.1
