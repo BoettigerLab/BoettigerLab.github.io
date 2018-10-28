@@ -1,1 +1,1 @@
-Sitemap: /https://boettigerlab.github.io/sitemap.xml
+Sitemap: https://boettigerlab.github.io/https://boettigerlab.github.io/test/sitemap.xml
